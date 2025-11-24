@@ -52,9 +52,10 @@ def create_table(schema):
     conn.commit()
     close_conn_cursor(conn, cur)
 
+
 def get_video_ids(cur, schema):
 
     cur.execute(f"""SELECT "Video_ID" FROM {schema}.{table};""")
     video_ids = [row["Video_ID"] for row in cur.fetchall()]
 
-    return
+    return video_ids
