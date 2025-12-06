@@ -33,6 +33,7 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Build and push Docker image
+        if: steps.changed-files-build.outputs.any_changed == 'true'
         run: |
           docker buildx build --push \
              --tag ${{ vars.DOCKERHUB_NAMESPACE}}/${{ vars.DOCKER_REPOSITORY}}:latest \
