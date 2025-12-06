@@ -35,8 +35,8 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker buildx build --push \
-             --tag ${{ vars.DOCKERHUB_NAMESPACE}}//${{ vars.DOCKER_REPOSITORY}}:latest \
-             --tag ${{ vars.DOCKERHUB_NAMESPACE}}//${{ vars.DOCKER_REPOSITORY}}:${{ github.sha }} \
+             --tag ${{ vars.DOCKERHUB_NAMESPACE}}/${{ vars.DOCKER_REPOSITORY}}:latest \
+             --tag ${{ vars.DOCKERHUB_NAMESPACE}}/${{ vars.DOCKER_REPOSITORY}}:${{ github.sha }} \
              .
 
   unit-and-integration-and-e2e-tests:
