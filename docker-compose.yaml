@@ -51,7 +51,7 @@ x-airflow-common:
   image: ${DOCKERHUB_NAMESPACE}/${DOCKER_REPOSITORY}:latest
   # Use the .env file to read the connection params and variables - SWITCH THIS OFF WHEN USING GITHUB ACTIONS
   # env_file:
-  #   - .env 
+  #   - .env
   environment:
     &airflow-common-env
     # Set executor to CeleryExecutor 
