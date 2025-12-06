@@ -67,7 +67,7 @@ jobs:
       CHANNEL_HANDLE: ${{ vars.CHANNEL_HANDLE }}
       DOCKERHUB_NAMESPACE: ${{ vars.DOCKERHUB_NAMESPACE }}
       DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
-      DOCKER_REPOSITORY: ${{ vars.DOCKERHUB_REPOSITORY }}
+      DOCKER_REPOSITORY: ${{ vars.DOCKER_REPOSITORY }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
