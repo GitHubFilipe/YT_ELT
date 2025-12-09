@@ -55,7 +55,6 @@ def real_postgres_connection():
     port = os.getenv("POSTGRES_CONN_PORT")
 
     print("----------------------------")
-    print(dbname)
 
     conn = None
 
