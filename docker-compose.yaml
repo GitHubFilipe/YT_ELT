@@ -52,6 +52,7 @@ x-airflow-common:
   # Use the .env file to read the connection params and variables - SWITCH THIS OFF WHEN USING GITHUB ACTIONS
   # env_file:
   #   - .env
+  #
   environment:
     &airflow-common-env
     # Set executor to CeleryExecutor 
