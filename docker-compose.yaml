@@ -99,6 +99,13 @@ x-airflow-common:
     - ./logs:/opt/airflow/logs:z
     - ./plugins:/opt/airflow/plugins:z
     - ./tests:/opt/airflow/tests:z
+    # - ./config:/opt/airflow/config:z
+    # - ./dags:/opt/airflow/dags:z
+    # - ./data:/opt/airflow/data:z
+    # - ./include:/opt/airflow/include:z
+    # - ./logs:/opt/airflow/logs:z
+    # - ./plugins:/opt/airflow/plugins:z
+    # - ./tests:/opt/airflow/tests:z
   user: "${AIRFLOW_UID}:0"
   depends_on:
     &airflow-common-depends-on
