@@ -147,9 +147,9 @@ services:
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "${POSTGRES_CONN_USERNAME}", "-d", "${METADATA_DATABASE_NAME}"]
       interval: 10s
-      retries: 5
+      retries: 20
       start_period: 5s
-      timeout: 30s
+      timeout: 60s
     restart: always
 
   redis:
