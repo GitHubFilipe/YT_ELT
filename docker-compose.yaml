@@ -170,7 +170,6 @@ services:
       interval: 30s
       timeout: 10s
       retries: 20
-      sleep: 5
       start_period: 30s
     restart: always
     depends_on:
@@ -187,7 +186,6 @@ services:
       interval: 30s
       timeout: 10s
       retries: 25
-      sleep: 5
       start_period: 30s
     restart: always
     depends_on:
@@ -206,7 +204,6 @@ services:
       interval: 30s
       timeout: 10s
       retries: 25
-      sleep: 5
       start_period: 30s
     environment:
       <<: *airflow-common-env
