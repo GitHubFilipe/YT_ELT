@@ -92,13 +92,13 @@ x-airflow-common:
     POSTGRES_CONN_HOST: ${POSTGRES_CONN_HOST}
     POSTGRES_CONN_PORT: ${POSTGRES_CONN_PORT}
   volumes:
-    - ./config:/opt/airflow/config:z
-    - ./dags:/opt/airflow/dags:z
-    - ./data:/opt/airflow/data:z
-    - ./include:/opt/airflow/include:z
-    - ./logs:/opt/airflow/logs:z
-    - ./plugins:/opt/airflow/plugins:z
-    - ./tests:/opt/airflow/tests:z
+    - ./config:/opt/airflow/config
+    - ./dags:/opt/airflow/dags
+    - ./data:/opt/airflow/data
+    - ./include:/opt/airflow/include
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./tests:/opt/airflow/tests
     # - ./config:/opt/airflow/config:z
     # - ./dags:/opt/airflow/dags:z
     # - ./data:/opt/airflow/data:z
