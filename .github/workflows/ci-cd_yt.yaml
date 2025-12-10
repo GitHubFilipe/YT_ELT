@@ -81,7 +81,7 @@ jobs:
             docker-compose.yaml
       - name: Set up Docker Compose
         if: steps.changed-files-tests.outputs.any_changed == 'true'
-        run: docker compose up -d
+        run: docker compose up -d --remove-orphans
       - name: Run unit and Integration Tests
         if: steps.changed-files-tests.outputs.any_changed == 'true'
         run: docker exec -t airflow-worker sh -c "pytest tests/ -v"
