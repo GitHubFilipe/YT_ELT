@@ -136,6 +136,7 @@ services:
       - CELERY_BACKEND_PASSWORD=${CELERY_BACKEND_PASSWORD}
       - POSTGRES_CONN_HOST=${POSTGRES_CONN_HOST}
       - POSTGRES_CONN_PORT=${POSTGRES_CONN_PORT}
+      #
     ports:
       - 5432:5432
     volumes:
